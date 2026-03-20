@@ -93,7 +93,7 @@ The dataset was connected directly from MySQL into Microsoft Power BI.
 - MySQL
 - Microsoft Power BI
 - GitHub
-### ## 👩‍💻 Author & Contact
+### 👩‍💻 Author & Contact
 Soundarya Kasale<br>
 Aspiring Data Analyst<br>
 Email: soundaryareddy463@gmail.com<br>
