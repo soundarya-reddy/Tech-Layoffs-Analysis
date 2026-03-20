@@ -10,8 +10,7 @@ Replaced missing values in Company and Location columns with "Unknown".
 Standardized location values:<br>
 - US, USA, San Francisco, Seattle, New York → United States
 - UK, London → United Kingdom
-
-Converted Funds Raised values to numeric format<br>
+- Converted Funds Raised values to numeric format<br>
 Example: 100M → 100000000.
 
 Filled blank values:
@@ -24,6 +23,7 @@ Filled blank values:
 #### Database Setup
 Data was imported into MySQL for analysis.<br>
 Example setup:<br>
+
 CREATE DATABASE TECH_LAYOFFS;<br>
 USE TECH_LAYOFFS;<br>
 SELECT * FROM layoffs;
@@ -43,20 +43,20 @@ GROUP BY company<br>
 ORDER BY layoffs DESC<br>
 LIMIT 10;
 
-##### Layoffs by Location:<br>
+#### Layoffs by Location:<br>
 SELECT location, SUM(laid_off) AS layoffs<br>
 FROM layoffs<br>
 GROUP BY location<br>
 ORDER BY layoffs DESC;<br>
 
-##### Monthly Layoff Trend:
+#### Monthly Layoff Trend:
 SELECT DATE_FORMAT(Date,'%Y-%m') AS month,<br>
 SUM(Laid_off) AS total_layoffs<br>
 FROM layoffs<br>
 GROUP BY Month<br>
 ORDER BY Month;
 
-##### Layoffs by Stage:<br>
+#### Layoffs by Stage:<br>
 SELECT stage, SUM(laid_off) AS layoffs<br>
 FROM layoffs<br>
 GROUP BY stage<br>
