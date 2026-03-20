@@ -83,6 +83,9 @@ The dataset was connected directly from MySQL into Microsoft Power BI.
 - Location
 - Stage
 
+![Dashboard]<img width="1171" height="674" alt="image" src="https://github.com/user-attachments/assets/36b29391-a95c-4f40-ad7c-f34bc75e042b" />
+
+
 ### Key Insights
 - Technology companies experienced significant layoffs during economic slowdowns.
 - Layoffs were concentrated in specific geographic locations and funding stages.
